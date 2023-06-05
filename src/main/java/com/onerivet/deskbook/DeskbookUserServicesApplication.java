@@ -4,6 +4,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;
@@ -23,6 +25,11 @@ public class DeskbookUserServicesApplication {
 	@Bean
 	ModelMapper modelMapper() {
 		return new ModelMapper();
+	}
+	
+	@Bean
+	JavaMailSender javaMail() {
+		return new JavaMailSenderImpl();
 	}
 
 }

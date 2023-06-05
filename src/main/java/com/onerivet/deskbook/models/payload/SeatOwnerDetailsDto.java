@@ -15,7 +15,7 @@ public class SeatOwnerDetailsDto {
 	//
 	private String firstName;
 	private String lastName;
-	private DesignationDto designation;
+	private String designation;
 	private String emailId;
 	//A person who get seat by approving owner
 	private int countOfRequest;

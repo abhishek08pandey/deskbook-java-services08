@@ -1,19 +1,22 @@
 package com.onerivet.deskbook.models.payload;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TemporarySeatOwnerDto {
+@ToString
+@Builder
+public class EmailDto {
 
-	//A person who get seat
-	private String firstName;
-	private String lastName;
-	private String designation;
-	private String emailId;
+	private String to;
+	private String subject;
+	private String body;
+	
 }

@@ -21,7 +21,7 @@ import jakarta.validation.constraints.Positive;
 
 @RestController
 @Validated
-@SecurityRequirement(name = "bearerAuth")
+@SecurityRequirement(name = "bearerAuth") 
 @RequestMapping("/api/deskbook")
 public class SeatConfigurationController {
 	

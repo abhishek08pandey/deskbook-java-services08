@@ -14,4 +14,8 @@ public interface SeatRequestRepo extends JpaRepository<SeatRequest, Integer> {
 	public int countFindBySeatIdAndBookingDateAndDeletedDateNull(SeatNumber seatId, LocalDate bookingDate);
 	
 	public SeatRequest findByRequestStatusAndBookingDateAndSeatIdAndDeletedDateNull(int requestStatus, LocalDate bookingDate,  SeatNumber seatId);
+	
+	//public int countFindByEmployeeIdBookingDateAndDeletedDateNull(String employee, LocalDate bookingDate);
+	
+//	public int findRequestStatusByEmployeeIdAndBookingDateAndDeletedDateNull(String employee, LocalDate bookingDate);
 }
