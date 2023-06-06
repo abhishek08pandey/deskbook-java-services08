@@ -17,9 +17,10 @@ public class SeatOwnerDetailsDto {
 	private String lastName;
 	private String designation;
 	private String emailId;
-	//A person who get seat by approving owner
 	private int countOfRequest;
 	
+	private String message;
+	//A person who get seat by approving owner
 	private TemporarySeatOwnerDto temporarySeatOwner;
-	
+	//Red = RESERVED, YELLOW = UNAVAILABLE, BLUE = BOOKED, GRAY = UNASSIGNED, GREEN = AVAILABLE
 }
